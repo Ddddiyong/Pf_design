@@ -1,0 +1,212 @@
+$(function(){
+    $('.clicker').click(function(){
+        $('.info_click').slideToggle();
+    })
+    $('.clicker2').click(function(){
+        $('.info_click2').slideToggle();
+    })
+    $('.clicker3').click(function(){
+        $('.info_click3').slideToggle();
+    })
+    $('.clicker4').click(function(){
+        $('.info_click4').slideToggle();
+    })
+    $('.clicker5').click(function(){
+        $('.info_click5').slideToggle();
+    })
+    $('.clicker6').click(function(){
+        $('.info_click6').slideToggle();
+    })
+})
+
+$(function(){
+    $('.sub1').show();
+    $('.sub2').hide();
+    $('.sub3').hide();
+    $('#main1').show();
+    $('#main2').hide();
+    $('#main3').hide();
+    $('#main4').hide();
+    $('#gp1').hide();
+    $('#gp2').hide();
+    $('#gp3').hide();
+    $('#gp4').hide();
+
+    $('.btnWd').click(function(){
+        $('.sub1').slideDown();
+        $('.sub2').hide();
+        $('.sub3').hide();
+        $('#main1').fadeIn();
+        $('#main2').fadeOut();
+        $('#main3').fadeOut();
+        $('#main4').fadeOut();
+        $('#gp1').hide();
+        $('#gp2').hide();
+        $('#gp3').hide();
+    })
+    $('.btnGp').click(function(){
+        $('.sub2').slideDown();
+        $('.sub1').hide();
+        $('.sub3').hide();
+        $('#main1').fadeOut();
+        $('#main2').fadeOut();
+        $('#main3').fadeOut();
+        $('#main4').fadeOut();
+        $('#gp1').fadeIn();
+            $('#p1').fadeIn();
+            $('#p2').fadeOut();
+            $('#p3').fadeOut();
+            $('#p4').fadeOut();
+            $('#p5').fadeOut();
+        $('#gp2').fadeOut();
+        $('#gp3').fadeOut();
+    })
+    $('.btnUi').click(function(){
+        $('.sub3').slideDown();
+        $('.sub1').hide();
+        $('.sub2').hide();
+        $('#main1').fadeOut();
+        $('#main2').fadeOut();
+        $('#main3').fadeOut();
+        $('#main4').fadeOut();
+    })
+
+
+    //웹디자인버튼 메뉴 클릭시
+    $('#sub1-1').click(function(){
+        $('#main1').fadeIn();
+        $('#main2').fadeOut();
+        $('#main3').fadeOut();
+        $('#main4').fadeOut();
+        $('#gp1').hide();
+        $('#gp2').hide();
+        $('#gp3').hide();
+        $('#gp4').hide();
+    })
+    $('#sub1-2').click(function(){
+        $('#main4').fadeOut();
+        $('#main3').fadeOut();
+        $('#main2').fadeIn();
+        $('#main1').fadeOut();
+        $('#gp1').hide();
+        $('#gp2').hide();
+        $('#gp3').hide();
+        $('#gp4').hide();
+    })
+    $('#sub1-3').click(function(){
+        $('#main4').fadeOut();
+        $('#main3').fadeIn();
+        $('#main2').fadeOut();
+        $('#main1').fadeOut();
+        $('#gp1').hide();
+        $('#gp2').hide();
+        $('#gp3').hide();
+        $('#gp4').hide();
+    })
+    $('#sub1-4').click(function(){
+        $('#main4').fadeIn();
+        $('#main3').fadeOut();
+        $('#main2').fadeOut();
+        $('#main1').fadeOut();
+        $('#gp1').hide();
+        $('#gp2').hide();
+        $('#gp3').hide();
+        $('#gp4').hide();
+    })
+
+    //그래픽버튼 메뉴 클릭시
+    $('#sub2-1').click(function(){
+        $('#main4').fadeOut();
+        $('#main3').fadeOut();
+        $('#main2').fadeOut();
+        $('#main1').fadeOut();
+        $('#gp1').fadeIn();
+        $('#gp2').fadeOut();
+        $('#gp3').fadeOut();
+        $('#gp4').hide();
+        $('#p1').fadeIn();
+        $('#p2').fadeOut();
+        $('#p3').fadeOut();
+        $('#p4').fadeOut();
+        $('#p5').fadeOut();
+    })
+    $('#sub2-2').click(function(){
+        $('#main4').fadeOut();
+        $('#main3').fadeOut();
+        $('#main2').fadeOut();
+        $('#main1').fadeOut();
+        $('#gp1').fadeOut();
+        $('#gp2').fadeIn();
+        $('#gp3').fadeOut();
+        $('#gp4').fadeOut();
+    })
+    $('#sub2-3').click(function(){
+        $('#main4').fadeOut();
+        $('#main3').fadeOut();
+        $('#main2').fadeOut();
+        $('#main1').fadeOut();
+        $('#gp1').fadeOut();
+        $('#gp2').fadeOut();
+        $('#gp3').fadeIn();
+        $('#gp4').fadeOut();
+    })
+    $('#sub2-4').click(function(){
+        $('#main4').fadeOut();
+        $('#main3').fadeOut();
+        $('#main2').fadeOut();
+        $('#main1').fadeOut();
+        $('#gp1').fadeOut();
+        $('#gp2').fadeOut();
+        $('#gp3').fadeOut();
+        $('#gp4').fadeIn();
+    })
+
+    //로고 내 아이콘 클릭시
+    $('#lo1').click(function(){
+        $('#p1').fadeIn();
+        $('#p2').fadeOut();
+        $('#p3').fadeOut();
+        $('#p4').fadeOut();
+        $('#p5').fadeOut();
+    })
+    $('#lo2').click(function(){
+        $('#p1').fadeOut();
+        $('#p2').fadeIn();
+        $('#p3').fadeOut();
+        $('#p4').fadeOut();
+        $('#p5').fadeOut();
+    })
+    $('#lo3').click(function(){
+        $('#p1').fadeOut();
+        $('#p2').fadeOut();
+        $('#p3').fadeIn();
+        $('#p4').fadeOut();
+        $('#p5').fadeOut();
+    })
+    $('#lo4').click(function(){
+        $('#p1').fadeOut();
+        $('#p2').fadeOut();
+        $('#p3').fadeOut();
+        $('#p4').fadeIn();
+        $('#p5').fadeOut();
+    })
+    $('#lo5').click(function(){
+        $('#p1').fadeOut();
+        $('#p2').fadeOut();
+        $('#p3').fadeOut();
+        $('#p4').fadeOut();
+        $('#p5').fadeIn();
+    })
+})
+$(function(){
+    $('.subMenu > ul > li').click(function(){
+        // 클래스 제거(상태 초기화)
+        $('.subMenu li').removeClass('selected');
+    
+        // 클래스 추가
+        $(this).addClass('selected');
+    
+        // a태그 하이퍼링크 기본 이벤트 해제
+        return false;
+    });
+})

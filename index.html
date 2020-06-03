@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹퍼블리셔 하상준의 홈페이지</title>
+    <!-- 제이쿼리-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <!--엔터뷰  플러그인 -->
+    <script src="https://unpkg.com/enter-view"></script>
+    <!-- 구글웹폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="js/index.js"></script>
+
+</head>
+
+<body>
+    <header id="main_header">
+        <div class="logo">
+            <h1><a href="#">HA SANG JUN.</a></h1>
+        </div>
+        <nav id="main_gnb">
+            <ul>
+                <li><a href="./">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#works">works</a></li>
+                <li><a href="#blog">blog</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="main_visual">
+        <div class="left">
+            <header class="title">
+                <h2>
+                    <span>web publisher</span>
+                    <span>HA SANG JUN</span>
+                </h2>
+            </header>
+        </div>
+        <div class="right">
+            <img src="img/wall.jpg">
+        </div>
+    </section>
+
+    <!-- works -->
+    <section id="works">
+        <header class="section_header">
+            <span>project</span>
+            <h2>MY WORKS</h2>
+        </header>
+        <nav>
+            <a class="btnWd">web design</a>
+            <a class="btnGp">graphic</a>
+            <a class="btnUi">uiux</a>
+        </nav>
+
+        <!-- 서브메뉴 -->
+        <div class="subMenu">
+            <ul class="sub1">
+                <li id="sub1-1" class="selected"><a>피자랜드</a></li>
+                <li id="sub1-2"><a>올드문커피</a></li>
+                <li id="sub1-3"><a>주식회사알펙</a></li>
+                <li id="sub1-4"><a>가치투자자문</a></li>
+            </ul>
+            <ul class="sub2">
+                <li id="sub2-1" class="selected"><a>로고</a></li>
+                <li id="sub2-2"><a>배너</a></li>
+                <li id="sub2-3"><a>광고</a></li>
+                <li id="sub2-4"><a>아이콘</a></li>
+            </ul>
+            <ul class="sub3">
+                <li id="sub3-1"><a>메뉴1</a></li>
+                <li id="sub3-2"><a>메뉴2</a></li>
+                <li id="sub3-3"><a>메뉴3</a></li>
+            </ul>
+        </div>
+
+        <!-- 작품목록 -->
+        <div id="subMenu2">
+
+            <!--웹디자인 영역-->
+            <div id="main1">
+                <div class="mainM1">
+                    <div class="mainTop1"><h1>PizzaLand</h1><br><img src="img/pl_logo.png"></div>
+                    <div class="mainLeft1">
+                        <img src="img/pl.png">
+                    </div>
+                    <div class="mainRight1">
+                        <h1>프로젝트명 : 피자랜드</h1>
+                        <h4>프로젝트 개요</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora velit porro ratione, soluta quis quaerat reiciendis, expedita repudiandae alias nemo dolores. Quod assumenda quidem quam inventore hic fuga error sit!</p>
+                        <a href="https://ddddiyong.github.io/PizzaLand/" target="_blank">
+                            <h5>URL : https://ddddiyong.github.io/PizzaLand/
+                            </h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="main2">
+                <div class="mainM2">
+                    <div class="mainTop2"><h1>OldMoon</h1><br><img src="img/oldmoon.png"></div>
+                    <div class="mainLeft2">
+                        <img src="img/oldmoon1.png">
+                    </div>
+                    <div class="mainRight2">
+                        <h1>프로젝트명 : 올드문커피</h1>
+                        <h4>프로젝트 개요</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora velit porro ratione, soluta quis quaerat reiciendis, expedita repudiandae alias nemo dolores. Quod assumenda quidem quam inventore hic fuga error sit!</p>
+                        <a href="https://ddddiyong.github.io/OldMoon/" target="_blank">
+                            <h5>
+                                URL : https://ddddiyong.github.io/OldMoon/
+                            </h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="main3">
+                <div class="mainM3">
+                    <div class="mainTop3"><h1>Alpec</h1><br><img src="img/alpec_logo.png"></div>
+                    <div class="mainLeft3">
+                        <img src="img/alpec.png">
+                    </div>
+                    <div class="mainRight3">
+                        <h1>프로젝트명 : 알펙주식회사</h1>
+                        <h4>프로젝트 개요</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora velit porro ratione, soluta quis quaerat reiciendis, expedita repudiandae alias nemo dolores. Quod assumenda quidem quam inventore hic fuga error sit!</p>
+                        <a href="https://ddddiyong.github.io/Alpec/" target="_blank">
+                            <h5>URL : https://ddddiyong.github.io/Alpec/
+                            </h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="main4">
+                <div class="mainM4">
+                    <div class="mainTop4"><h1>가치투자자문</h1><br><img src="images/main_logo.png"></div>
+                    <div class="mainLeft4">
+                        <img src="img/gachi.png">
+                    </div>
+                    <div class="mainRight4">
+                        <h1>프로젝트명 : 가치투자자문</h1>
+                        <h4>프로젝트 개요</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora velit porro ratione, soluta quis quaerat reiciendis, expedita repudiandae alias nemo dolores. Quod assumenda quidem quam inventore hic fuga error sit!</p><br>
+                        <a href="https://ddddiyong.github.io/TeamProject/" target="_blank">
+                            <h5>
+                                URL : https://ddddiyong.github.io/TeamProject/
+                            </h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--그래픽 영역-->
+            <div id="gp1">
+                <div class="mainM5">
+                    <div class="mainTop5"><h1>로고</h1></div>
+                    <div class="mainLeft5">
+                        <img src="img/lo1.png" style="width: 150px; height: 70px;" id="lo1"><br>
+                        <img src="img/lo2.png" style="width: 150px; height: 70px;" id="lo2"><br>
+                        <img src="img/lo3.png" style="width: 150px; height: 100px;" id="lo3"><br>
+                        <img src="img/oldmoon.png" id="lo4"><br>
+                        <img src="img/pl_logo.png" id="lo5"><br>
+                    </div>
+                    <div class="mainRight5">
+                        <h1>로고 제작</h1>
+                        <h4>작품개요</h4>
+                        <p id="p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, earum labore quos eveniet soluta voluptates natus alias asperiores sint accusantium temporibus est corrupti maiores velit quia magni ullam quasi iusto!</p>
+                        <p id="p2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, earum labore quos eveniet soluta voluptates natus alias asperiores sint accusantium temporibus est corrupti maiores velit quia magni ullam quasi iusto!</p>
+                        <p id="p3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, earum labore quos eveniet soluta voluptates natus alias asperiores sint accusantium temporibus est corrupti maiores velit quia magni ullam quasi iusto!</p>
+                        <p id="p4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, earum labore quos eveniet soluta voluptates natus alias asperiores sint accusantium temporibus est corrupti maiores velit quia magni ullam quasi iusto!</p>
+                        <p id="p5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, earum labore quos eveniet soluta voluptates natus alias asperiores sint accusantium temporibus est corrupti maiores velit quia magni ullam quasi iusto!</p>
+                    </div>
+                </div>
+            </div>
+            <div id="gp2">
+                <div class="mainM6">
+                    <div class="mainTop6"><h1>배너</h1></div>
+                    <div class="mainLeft6">
+                        <img src="img/ba2.png"><br>
+                        <img src="img/ba3.png"><br>
+                        <img src="img/ba4.png"><br>
+                        <img src="img/ba5.png"><br>
+                    </div>
+                    <div class="mainRight6">
+                        <h1>배너 제작</h1>
+                        <h4>작품개요</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora velit porro ratione, soluta quis quaerat reiciendis, expedita repudiandae alias nemo dolores. Quod assumenda quidem quam inventore hic fuga error sit!</p>
+                    </div>
+                </div>
+            </div>
+            <div id="gp3">
+                <div class="mainM7">
+                    <div class="mainTop7"><h1>광고</h1></div>
+                    <div class="mainLeft7">
+                        <img src="img/ad3.png">
+                        <img src="img/ad4.png">
+                    </div>
+                    <div class="mainRight7">
+                        <h1>광고 제작</h1>
+                        <h4>작품개요</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora velit porro ratione, soluta quis quaerat reiciendis, expedita repudiandae alias nemo dolores. Quod assumenda quidem quam inventore hic fuga error sit!</p>
+                    </div>
+                </div>
+            </div>
+            <div id="gp4">
+                <div class="mainM8">
+                    <div class="mainTop8"><h1>아이콘</h1></div>
+                    <div class="mainLeft8">
+                        <img src="img/icon1.png"><br>
+                        <img src="img/icon2.png"><br>
+                        <img src="img/icon3.png">
+                    </div>
+                    <div class="mainRight8">
+                        <h1>아이콘 제작</h1>
+                        <h4>작품개요</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora velit porro ratione, soluta quis quaerat reiciendis, expedita repudiandae alias nemo dolores. Quod assumenda quidem quam inventore hic fuga error sit!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- <ul id="work_list">
+            <li>
+                <a class="clicker">
+                    <img src="images/home1.png" alt="프로젝트작품(서브페이지)">
+                    <div class="info">
+                        <h4>웹 디자인</h4>
+                        <p>현재까지 제작된 웹디자인 모음입니다.</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a class="clicker2">
+                    <img src="img/icon-me.png" alt="디자인작품(팝업)">
+                    <div class="info">
+                        <h4>아이콘 디자인</h4>
+                        <p>현재까지 제작된 아이콘 모음입니다.</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a class="clicker3">
+                    <img src="img/banner.png" alt="작품이미지">
+                    <div class="info">
+                        <h4>배너 디자인</h4>
+                        <p>현재까지 제작된 배너 디자인 모음 입니다.</p>
+                    </div>
+                </a>
+            </li>
+            <div class="info_click">
+                <span>웹디자인</span><br><br>
+                <a href="https://ddddiyong.github.io/Pf_design/pizza_main"><img src="img/pl.png"></a>
+                <a href="https://ddddiyong.github.io/Pf_design/twoja"><img src="img/gachi.png"></a>
+            </div>
+            <div class="info_click2">
+                <span>아이콘디자인</span><br><br>
+                <img src="img/icon1.png">
+                <img src="img/icon2.png">
+                <img src="img/icon3.png">
+            </div>
+            <div class="info_click3">
+                <span>배너 디자인</span><br><br>
+                <img src="img/ba1.png">
+                <img src="img/ba2.png">
+                <img src="img/ba3.png">
+                <img src="img/ba4.png">
+                <img src="img/ba5.png">
+            </div>
+
+            <li>
+                <a class="clicker4">
+                    <img src="img/logos.png" alt="작품이미지">
+                     <div class="info">
+                        <h4>로고 디자인</h4>
+                        <p>현재까지 제작된 로고 디자인 모음입니다.</p>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a class="clicker5">
+                    <img src="img/mail.png" alt="작품이미지">
+                    <div class="info">
+                        <h4>광고 디자인</h4>
+                        <p>현재까지 제작된 광고 디자인 모음입니다.</p>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a class="clicker6">
+                    <img src="img/proto.png" alt="작품이미지">
+                    <div class="info">
+                        <h4>프로토타입</h4>
+                        <p>홈페이지의 시안 디자인 모음입니다.</p>
+                    </div>
+                </a>
+            </li>
+            <div class="info_click4">
+                <span>로고 디자인</span><br><br>
+                <img src="img/lo1.png"><br>
+                <img src="img/lo2.png"><br>
+                <img src="img/lo3.png"><br>
+                <img src="img/b1.png">
+            </div>
+            <div class="info_click5">
+                <span>광고 디자인</span><br><br>
+                <img src="img/ad2.png">
+                <img src="img/ad3.png">
+                <img src="img/ad4.png">
+                <img src="img/ad5.png">
+                <img src="img/ad6.png">
+                
+            </div>
+            <div class="info_click6">
+                <span>시안 디자인</span><br><br>
+                <img src="img/ga.jpg"><br>
+                <img src="img/ga2.jpg">
+            </div>
+        </ul>
+    </section> -->
+
+    
+
+    
+    <!-- footer -->
+    <section id="contact">
+        <header class="section_header">
+            <span>Get in Touch</span>
+            <h2>CONTACT</h2>
+        </header>
+        <div id="footer_content">
+            <ul>
+                <li class="im1">
+                    <a href="#"><img src="images/mail.png" alt="mail"></a>
+                    <p>h1223j@naver.com</p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/call-24px.svg" alt="call"></a>
+                    <p>010.6889.0290</p>
+                </li>
+
+
+                <li class="im2">
+                    <a href="#"><img src="images/facebook.png" alt=""></a>
+                    <a href="#"><img src="images/instagram.png" alt=""></a>
+                    <a href="#"><img src="images/google.png" alt=""></a>
+                    <p>SNS</p>
+                </li>
+            </ul>
+        </div>
+
+        <p>&copy; 2020 Gtc. All Rights Reserved</p>
+
+    </section>
+</body>
+
+</html>
