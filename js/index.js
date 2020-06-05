@@ -43,6 +43,7 @@ $(function(){
         $('#gp1').hide();
         $('#gp2').hide();
         $('#gp3').hide();
+        $('#gp4').fadeOut();
     })
     $('.btnGp').click(function(){
         $('.sub2').slideDown();
@@ -60,6 +61,7 @@ $(function(){
             $('#p5').fadeOut();
         $('#gp2').fadeOut();
         $('#gp3').fadeOut();
+        $('#gp4').fadeOut();
     })
     $('.btnUi').click(function(){
         $('.sub3').slideDown();
@@ -69,10 +71,14 @@ $(function(){
         $('#main2').fadeOut();
         $('#main3').fadeOut();
         $('#main4').fadeOut();
+        $('#gp1').fadeOut();
+        $('#gp2').fadeOut();
+        $('#gp3').fadeOut();
+        $('#gp4').fadeOut();
     })
 
 
-    //웹디자인버튼 메뉴 클릭시
+    //웹디자인 내부 메뉴 클릭시
     $('#sub1-1').click(function(){
         $('#main1').fadeIn();
         $('#main2').fadeOut();
@@ -114,7 +120,7 @@ $(function(){
         $('#gp4').hide();
     })
 
-    //그래픽버튼 메뉴 클릭시
+    //그래픽 내부 메뉴 클릭시
     $('#sub2-1').click(function(){
         $('#main4').fadeOut();
         $('#main3').fadeOut();
@@ -123,7 +129,7 @@ $(function(){
         $('#gp1').fadeIn();
         $('#gp2').fadeOut();
         $('#gp3').fadeOut();
-        $('#gp4').hide();
+        $('#gp4').fadeOut();
         $('#p1').fadeIn();
         $('#p2').fadeOut();
         $('#p3').fadeOut();
@@ -159,6 +165,18 @@ $(function(){
         $('#gp2').fadeOut();
         $('#gp3').fadeOut();
         $('#gp4').fadeIn();
+    })
+
+    //UXUI 내부 메뉴 클릭시
+    $('#sub3-1').click(function(){
+        $('#main4').fadeOut();
+        $('#main3').fadeOut();
+        $('#main2').fadeOut();
+        $('#main1').fadeOut();
+        $('#gp1').fadeOut();
+        $('#gp2').fadeOut();
+        $('#gp3').fadeOut();
+        $('#gp4').fadeOut();
     })
 
     //로고 내 아이콘 클릭시

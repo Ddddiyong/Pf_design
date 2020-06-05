@@ -107,38 +107,29 @@ body {
 /* about */
 #about {
     width: 1200px;
-    height: 685px;
+    height: 300px;
     margin: 0 auto;
-    padding-top: 100px;
-    background: #ececec;
     overflow: hidden;
+    text-align: center;
 }
-#about > .about_left {
-    position: relative;
-    width: 600px;
-    height: 100%;
-    float: left;
-    background-image: url('../shape3.png');
-    background-repeat: no-repeat;
-    background-position: 260px 470px;
+#about > div{
+    float: left; margin-top: 50px;
 }
-#about > .about_left > .box {
-    position: absolute;
-    width: 360px;
-    height: 410px;
-    background: #202020;
-    left: 45px;
-}
-#about > .about_left > img {
-    position: relative;
-    left: 90px; top: 45px;
-}
+.profile{width: 400px; height: 250px;}
+.profile > img{width: 160px; height: 160px; float: left; margin-top: 25px; border-radius: 50%; border: 5px solid #444; margin-left: 20px;}
+.profile > .about-1{float: left; text-align: left; margin-left: 50px;}
+.profile > .about-1 > li{ margin-top: 17px; color: #444;}
+.profile > h4{width: 70px; margin: 0 auto; padding-bottom: 5px; color: #444;}
+.profile > h4:hover, .me>h4:hover, .tal>h4:hover{border-bottom: 2px solid #444;}
 
-#about > .about_right {
-    width: 600px;
-    float: right;
-    padding-top: 50px;
-}
+.me{width: 500px; height: 250px;}
+.about-2{text-align: center;}
+.about-2 > li{ margin-top: 25px; color: #444;}
+.me > h4{width: 110px; margin: 0 auto; padding-bottom: 5px; color: #444;}
+
+.tal{width: 300px; height: 250px;}
+.tal > h4{width: 40px; margin: 0 auto; padding-bottom: 5px; color: #444;}
+
 
 /* 섹션 영역의 공통 헤더 스타일 */
 
