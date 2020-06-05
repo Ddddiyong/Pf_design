@@ -3,11 +3,11 @@
     margin: 0; padding: 0;
     /* 박스사이징을 해놔야 틀어지지않음 */
     box-sizing: border-box;
+    font-family: 'Nanum Gothic',sans-serif;
 }
 a {text-decoration: none;}
 ul{list-style-type: none;}
 body {
-    font-family: 'Nanum Gothic', sans-serif;
     font-size: 18px;
 }
 
@@ -116,15 +116,15 @@ body {
     float: left; margin-top: 50px;
 }
 .profile{width: 400px; height: 250px;}
-.profile > img{width: 160px; height: 160px; float: left; margin-top: 25px; border-radius: 50%; border: 5px solid #444; margin-left: 20px;}
+.profile > img{width: 140px; height: 140px; float: left; margin-top: 25px; border-radius: 50%; border: 5px solid #444; margin-left: 20px;}
 .profile > .about-1{float: left; text-align: left; margin-left: 50px;}
-.profile > .about-1 > li{ margin-top: 17px; color: #444;}
+.profile > .about-1 > li{ margin-top: 17px; color: #444; font-size: 14px;}
 .profile > h4{width: 70px; margin: 0 auto; padding-bottom: 5px; color: #444;}
 .profile > h4:hover, .me>h4:hover, .tal>h4:hover{border-bottom: 2px solid #444;}
 
 .me{width: 500px; height: 250px;}
 .about-2{text-align: center;}
-.about-2 > li{ margin-top: 25px; color: #444;}
+.about-2 > li{ margin-top: 25px; color: #444; font-size: 14px;}
 .me > h4{width: 110px; margin: 0 auto; padding-bottom: 5px; color: #444;}
 
 .tal{width: 300px; height: 250px;}
