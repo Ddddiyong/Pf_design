@@ -111,24 +111,45 @@ body {
     margin: 0 auto;
     overflow: hidden;
     text-align: center;
+    /* outline: 1px solid #333; */
 }
 #about > div{
     float: left; margin-top: 50px;
+    /* outline: 1px solid #051; */
 }
+/* #about > div li{outline:solid 1px red;}
+#about > .profile > img{outline:solid 1px blue;} */
+
 .profile{width: 400px; height: 250px;}
-.profile > img{width: 140px; height: 140px; float: left; margin-top: 25px; border-radius: 50%; border: 5px solid #444; margin-left: 20px;}
-.profile > .about-1{float: left; text-align: left; margin-left: 50px;}
-.profile > .about-1 > li{ margin-top: 17px; color: #444; font-size: 14px;}
-.profile > h4{width: 70px; margin: 0 auto; padding-bottom: 5px; color: #444;}
+.profile > img{width: 120px; height: 150px; float: left; margin-top: 25px; border-radius: 50%; margin-left: 20px;}
+.profile > .about-1{float: left; text-align: left; margin-left: 50px; margin-top: 10px;}
+.profile > .about-1 > li{margin-top: 0px; color: #444; font-size: 14px;
+    width: 150px; height: 40px; padding:11px;}
+.profile > h4{width: 70px; margin: 0 auto; padding-bottom: 5px; color: #444; }
+
+/* 호버링
 .profile > h4:hover, .me>h4:hover, .tal>h4:hover{border-bottom: 2px solid #444;}
+.profile > h4:hover ~ .about-1{background-color: #333; transition: 0.4s; border-radius: 5px;}
+.profile > h4:hover ~ .about-1 > li{color: #fff; transition: 0.4s; border-bottom: 1px solid white;}
+
+.me > h4:hover ~ .about-2{background-color: #333; transition: 0.4s; border-radius: 5px;}
+.me > h4:hover ~ .about-2 > li{color: #fff; transition: 0.4s; border-bottom: 1px solid white;}
+
+.tal > h4:hover ~ .about-3{background-color: #333; transition: 0.4s; border-radius: 5px;}
+.tal > h4:hover ~ .about-3 > li{color: #fff; transition: 0.4s; border-bottom: 1px solid white;} */
 
 .me{width: 500px; height: 250px;}
-.about-2{text-align: center;}
-.about-2 > li{ margin-top: 25px; color: #444; font-size: 14px;}
+.about-2{text-align: center; margin-top: 25px;margin-left: 0%;}
+.about-2 > li{margin-top: 0px; color: #444; font-size: 14px;
+    width: 350px; height: 49px; padding:15px; text-align: center;
+    margin-left: 15%;}
 .me > h4{width: 110px; margin: 0 auto; padding-bottom: 5px; color: #444;}
 
+.about-3{text-align: center; margin-top: 25px;margin-left: 8.5%;}
+.about-3 > li{margin-top: 0px; color: #444; font-size: 14px;
+    width: 250px; height: 45px; padding:15px;}
+.tal > h4{width: 110px; margin: 0 auto; padding-bottom: 5px; color: #444;}
 .tal{width: 300px; height: 250px;}
-.tal > h4{width: 40px; margin: 0 auto; padding-bottom: 5px; color: #444;}
 
 
 /* 섹션 영역의 공통 헤더 스타일 */
@@ -191,15 +212,18 @@ body {
     width: 1200px;
     height: 50px;
 }
-.mainLeft1 > img,
-.mainLeft2 > img,
-.mainLeft4 > img{height: 700px; width: 100%;}
-.mainLeft3 > img{height: 690px; margin-left: 200px;}
-.mainLeft5 > img{margin-top: 50px; margin-left: 250px;}
-.mainLeft5 > img:hover{opacity: 0.5;}
-.mainLeft6 > img{height: 150px; margin-left: 150px; margin-top: 20px;}
-.mainLeft7 > img{height: 450px; margin-left: 20px;}
-.mainLeft8 > img{width: 200px; height: 200px; margin-left: 250px; margin-top: 25px;}
+.mainLeft1 > img{height: 90%; width: 80%;}
+.mainLeft2 > img{height: 90%; width: 70%; margin-left: 100px;}
+.mainLeft3 > img{height: 690px; width: 80%; margin-left: 70px;}
+.mainLeft4 > img{height: 80%; width: 90%; margin-left: 70px;}
+.mainLeft5 > img{margin-top: 30px; margin-left: 50px; opacity: 0.5;}
+.mainLeft5 > img:hover{opacity: 1;}
+.mainLeft6 > img{width:100px; margin-left: 50px; margin-top: 20px; opacity: 0.5;}
+.mainLeft6 > img:hover{opacity: 1;}
+.mainLeft7 > img{margin-left: 20px; margin-top: 10px; opacity: 0.5;}
+.mainLeft7 > img:hover{opacity: 1;}
+.mainLeft8 > img{margin-left: 25px; margin-top: 25px; opacity: 0.5;}
+.mainLeft8 > img:hover{opacity: 1;}
 
 .mainRight1 h1,
 .mainRight1 h4,
@@ -216,13 +240,59 @@ body {
 .mainRight7 h1,
 .mainRight7 h4,
 .mainRight8 h1,
-.mainRight8 h4{text-align: center; margin-bottom: 50px;}
+.mainRight8 h4{text-align: left; margin-bottom: 30px; margin-left: 20px;}
+
+.mainRight1 ,
+.mainRight2 ,
+.mainRight3 ,
+.mainRight4{width: 500px; float: left; font-size: 14px;}
+.mainRight5{width: 400px; float: left; font-size: 14px;}
+.mainRight6{width: 400px; float: left; font-size: 14px;}
+.mainRight7{width: 400px; float: left; font-size: 14px;}
+.mainRight8{width: 400px; float: left; font-size: 14px;}
+
+
+.mainCenter{width: 550px; height: 700px; float: left;
+    text-align: center; position: relative;
+}
+.mainCenter img{position: absolute; left: 130px; top: 0px;}
+
+.mainCenter2{width: 550px; height: 700px; float: left;
+    text-align: center; position: relative;
+}
+.mainCenter2 img{position: absolute; left: 25px; top: 0px; width: 500px;}
+
+.mainCenter3{width: 550px; height: 700px; float: left;
+    text-align: center; position: relative;
+}
+.mainCenter3 img{position: absolute; left: 25px; top: 0px; width: 500px;}
+
+.mainCenter4{width: 550px; height: 700px; float: left;
+    text-align: center; position: relative;
+}
+.mainCenter4 img{position: absolute; left: 75px; top: 0px; width: 400px;}
+
+.mainRight5 #p1,
+.mainRight5 #p2,
+.mainRight5 #p3,
+.mainRight5 #p4,
+.mainRight5 #p5,
+.mainRight5 #p6{width: 370px; float: left; margin-left: 20px;}
+
+.mainRight6 #p7{float: left; margin-left: 20px;}
+.mainRight7 #p8{float: left; margin-left: 20px;}
+.mainRight8 #p9{float: left; margin-left: 20px;}
+
+.mainRight1{text-align: left;}
+.mainRight1 > a{text-align: left;}
+
 .mainTop3 > img{ width: 150px; height: 50px;}
 .sub1 > li, .sub2 > li{
     float: left;
     width: 300px;
     text-align: center;
     line-height: 50px;
+    color: #004E54;
 }
 .sub3 > li{
     float: left;
@@ -231,26 +301,29 @@ body {
     line-height: 50px;
 }
 .subMenu > ul > li:hover{
-    background: #7accc8;
+    background:#a3dbd8;
     transition: 0.4s;
+    border-radius: 10px 10px 0px 0px;
 }
 .subMenu > ul > li:hover a{
-    color: white;
+    color: #fff;
+    transition: 0.4s;
 }
 #main1, #main2, #main3, #main4, #gp1, #gp2, #gp3, #gp4{
-    border: 1px solid #bdbdbd;
+    border: 1px solid #bdbdbd; border-bottom: 0px;
     width: 1200px; height: 900px;
 }
-.mainLeft1 img{width: 100%;}
+.mainLeft1 img{width: 80%; height: 80%; margin-left: 10%;}
 
 .mainM1,
 .mainM2,
 .mainM3,
 .mainM4,
-.mainM4,
+.mainM5,
 .mainM6,
 .mainM7,
 .mainM8{float: left;}
+
 
 .mainTop1,
 .mainTop2,
@@ -259,7 +332,7 @@ body {
 .mainTop5,
 .mainTop6,
 .mainTop7,
-.mainTop8{width: 1200px; height: 200px; text-align: center;}
+.mainTop8{width: 1200px; height: 150px; text-align: center;}
 
 .mainTop1 > h1,
 .mainTop2 > h1,
@@ -273,17 +346,21 @@ body {
 .mainLeft1,
 .mainLeft2,
 .mainLeft3,
-.mainLeft4,
-.mainLeft5,
-.mainLeft6,
-.mainLeft7,
-.mainLeft8{width: 700px; height: 700px; float: left;}
+.mainLeft4{width: 700px; height: 700px; float: left;}
+.mainLeft6{width: 200px; height: 700px; float: left;}
+.mainLeft7{width: 200px; height: 700px; float: left;}
+.mainLeft8{width: 200px; height: 700px; float: left;}
+
+
+.mainLeft5{width: 250px; float: left;}
+
 
 #subMenu2 p{width: 400px; float: right; margin-right: 40px; line-height: 30px;}
 #subMenu2 h5{width: 400px; float: right; margin-right: 40px;margin-top: 40px;}
 #subMenu2 a{color: black;}
 
-.sub1 > li.selected,.sub2 > li.selected{background: #7accc8;}
+.sub1 > li.selected,.sub2 > li.selected{background: #7accc8; border-radius: 10px 10px 0px 0px;}
+
 
 #works > article h4{font-size: 20px; margin-top: 10px;}
 #works > article p{font-size: 14px;}
@@ -302,6 +379,7 @@ body {
     height: 300px;
     margin: 0 auto;
     background: #333;
+    margin-top: 50px;
 }
 #contact > .section_header > span{
     padding: 0px;

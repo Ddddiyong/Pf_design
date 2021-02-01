@@ -32,6 +32,35 @@ $(function(){
     $('#gp3').hide();
     $('#gp4').hide();
 
+    //그래픽 로고 본이미지 하이드
+    $('#cen1').show();
+    $('#cen2').hide();
+    $('#cen3').hide();
+    $('#cen4').hide();
+    $('#cen5').hide();
+    $('#cen6').hide();
+
+    //그래픽 배너 본이미지 하이드
+    $('#ban1-1').show();
+    $('#ban2-1').hide();
+    $('#ban3-1').hide();
+    $('#ban4-1').hide();
+    $('#ban5-1').hide();
+
+    //그래픽 광고 본이미지 하이드
+    $('#ad1').show();
+    $('#ad2').hide();
+    $('#ad3').hide();
+    $('#ad4').hide();
+    $('#ad5').hide();
+
+    //그래픽 아이콘 본이미지 하이드
+    $('#ic1').show();
+    $('#ic2').hide();
+    $('#ic3').hide();
+    $('#ic4').hide();
+    $('#ic5').hide();
+
     $('.btnWd').click(function(){
         $('.sub1').slideDown();
         $('.sub2').hide();
@@ -59,6 +88,7 @@ $(function(){
             $('#p3').fadeOut();
             $('#p4').fadeOut();
             $('#p5').fadeOut();
+            $('#p6').fadeOut();
         $('#gp2').fadeOut();
         $('#gp3').fadeOut();
         $('#gp4').fadeOut();
@@ -84,36 +114,37 @@ $(function(){
         $('#main2').fadeOut();
         $('#main3').fadeOut();
         $('#main4').fadeOut();
+        
         $('#gp1').hide();
         $('#gp2').hide();
         $('#gp3').hide();
         $('#gp4').hide();
     })
     $('#sub1-2').click(function(){
-        $('#main4').fadeOut();
-        $('#main3').fadeOut();
-        $('#main2').fadeIn();
         $('#main1').fadeOut();
+        $('#main2').fadeIn();
+        $('#main3').fadeOut();
+        $('#main4').fadeOut();
         $('#gp1').hide();
         $('#gp2').hide();
         $('#gp3').hide();
         $('#gp4').hide();
     })
     $('#sub1-3').click(function(){
-        $('#main4').fadeOut();
-        $('#main3').fadeIn();
-        $('#main2').fadeOut();
         $('#main1').fadeOut();
+        $('#main2').fadeOut();
+        $('#main3').fadeIn();
+        $('#main4').fadeOut();
         $('#gp1').hide();
         $('#gp2').hide();
         $('#gp3').hide();
         $('#gp4').hide();
     })
     $('#sub1-4').click(function(){
-        $('#main4').fadeIn();
-        $('#main3').fadeOut();
-        $('#main2').fadeOut();
         $('#main1').fadeOut();
+        $('#main2').fadeOut();
+        $('#main3').fadeOut();
+        $('#main4').fadeIn();
         $('#gp1').hide();
         $('#gp2').hide();
         $('#gp3').hide();
@@ -135,6 +166,7 @@ $(function(){
         $('#p3').fadeOut();
         $('#p4').fadeOut();
         $('#p5').fadeOut();
+        $('#p6').fadeOut();
     })
     $('#sub2-2').click(function(){
         $('#main4').fadeOut();
@@ -186,6 +218,15 @@ $(function(){
         $('#p3').fadeOut();
         $('#p4').fadeOut();
         $('#p5').fadeOut();
+        $('#p6').fadeOut();
+
+        //본문 이미지 생성
+        $('#cen1').fadeIn();
+        $('#cen2').fadeOut();
+        $('#cen3').fadeOut();
+        $('#cen4').fadeOut();
+        $('#cen5').fadeOut();
+        $('#cen6').fadeOut();
     })
     $('#lo2').click(function(){
         $('#p1').fadeOut();
@@ -193,6 +234,14 @@ $(function(){
         $('#p3').fadeOut();
         $('#p4').fadeOut();
         $('#p5').fadeOut();
+        $('#p6').fadeOut();
+
+        $('#cen1').fadeOut();
+        $('#cen2').fadeIn();
+        $('#cen3').fadeOut();
+        $('#cen4').fadeOut();
+        $('#cen5').fadeOut();
+        $('#cen6').fadeOut();
     })
     $('#lo3').click(function(){
         $('#p1').fadeOut();
@@ -200,6 +249,14 @@ $(function(){
         $('#p3').fadeIn();
         $('#p4').fadeOut();
         $('#p5').fadeOut();
+        $('#p6').fadeOut();
+
+        $('#cen1').fadeOut();
+        $('#cen2').fadeOut();
+        $('#cen3').fadeIn();
+        $('#cen4').fadeOut();
+        $('#cen5').fadeOut();
+        $('#cen6').fadeOut();
     })
     $('#lo4').click(function(){
         $('#p1').fadeOut();
@@ -207,6 +264,14 @@ $(function(){
         $('#p3').fadeOut();
         $('#p4').fadeIn();
         $('#p5').fadeOut();
+        $('#p6').fadeOut();
+
+        $('#cen1').fadeOut();
+        $('#cen2').fadeOut();
+        $('#cen3').fadeOut();
+        $('#cen4').fadeIn();
+        $('#cen5').fadeOut();
+        $('#cen6').fadeOut();
     })
     $('#lo5').click(function(){
         $('#p1').fadeOut();
@@ -214,6 +279,128 @@ $(function(){
         $('#p3').fadeOut();
         $('#p4').fadeOut();
         $('#p5').fadeIn();
+        $('#p6').fadeOut();
+
+        $('#cen1').fadeOut();
+        $('#cen2').fadeOut();
+        $('#cen3').fadeOut();
+        $('#cen4').fadeOut();
+        $('#cen5').fadeIn();
+        $('#cen6').fadeOut();
+    })
+    $('#lo6').click(function(){
+        $('#p1').fadeOut();
+        $('#p2').fadeOut();
+        $('#p3').fadeOut();
+        $('#p4').fadeOut();
+        $('#p5').fadeOut();
+        $('#p6').fadeIn();
+
+        $('#cen1').fadeOut();
+        $('#cen2').fadeOut();
+        $('#cen3').fadeOut();
+        $('#cen4').fadeOut();
+        $('#cen5').fadeOut();
+        $('#cen6').fadeIn();
+    })
+    
+
+    //배너 내 아이콘 클릭시
+    $('#ban1').click(function(){
+        //본문 이미지 생성
+        $('#ban1-1').fadeIn();
+        $('#ban2-1').fadeOut();
+        $('#ban3-1').fadeOut();
+        $('#ban4-1').fadeOut();
+        $('#ban5-1').fadeOut();
+    })
+    $('#ban2').click(function(){
+        //본문 이미지 생성
+        $('#ban2-1').fadeIn();
+        $('#ban1-1').fadeOut();
+        $('#ban3-1').fadeOut();
+        $('#ban4-1').fadeOut();
+        $('#ban5-1').fadeOut();
+    })
+    $('#ban3').click(function(){
+        //본문 이미지 생성
+        $('#ban3-1').fadeIn();
+        $('#ban1-1').fadeOut();
+        $('#ban2-1').fadeOut();
+        $('#ban4-1').fadeOut();
+        $('#ban5-1').fadeOut();
+    })
+    $('#ban4').click(function(){
+        //본문 이미지 생성
+        $('#ban4-1').fadeIn();
+        $('#ban1-1').fadeOut();
+        $('#ban3-1').fadeOut();
+        $('#ban2-1').fadeOut();
+        $('#ban5-1').fadeOut();
+    })
+    $('#ban5').click(function(){
+        //본문 이미지 생성
+        $('#ban5-1').fadeIn();
+        $('#ban1-1').fadeOut();
+        $('#ban3-1').fadeOut();
+        $('#ban4-1').fadeOut();
+        $('#ban2-1').fadeOut();
+    })
+
+    //광고 내 아이콘 클릭시
+    $('#adB1').click(function(){
+        //본문 이미지 생성
+        $('#ad1').fadeIn();
+        $('#ad2').fadeOut();
+        $('#ad3').fadeOut();
+        $('#ad4').fadeOut();
+        $('#ad5').fadeOut();
+    })
+    $('#adB2').click(function(){
+        $('#ad2').fadeIn();
+        $('#ad1').fadeOut();
+        $('#ad3').fadeOut();
+        $('#ad4').fadeOut();
+        $('#ad5').fadeOut();
+    })
+    $('#adB3').click(function(){
+        $('#ad3').fadeIn();
+        $('#ad1').fadeOut();
+        $('#ad2').fadeOut();
+        $('#ad4').fadeOut();
+        $('#ad5').fadeOut();
+    })
+    $('#adB4').click(function(){
+        $('#ad4').fadeIn();
+        $('#ad1').fadeOut();
+        $('#ad3').fadeOut();
+        $('#ad2').fadeOut();
+        $('#ad5').fadeOut();
+    })
+    $('#adB5').click(function(){
+        $('#ad5').fadeIn();
+        $('#ad1').fadeOut();
+        $('#ad3').fadeOut();
+        $('#ad4').fadeOut();
+        $('#ad2').fadeOut();
+    })
+
+    //아이콘 내 아이콘 클릭시
+    $('#icB1').click(function(){
+        //본문 이미지 생성
+        $('#ic1').fadeIn();
+        $('#ic2').fadeOut();
+        $('#ic3').fadeOut();
+    })
+    $('#icB2').click(function(){
+        $('#ic2').fadeIn();
+        $('#ic1').fadeOut();
+        $('#ic3').fadeOut();
+    })
+    $('#icB3').click(function(){
+        $('#ic3').fadeIn();
+        $('#ic1').fadeOut();
+        $('#ic2').fadeOut();
     })
 })
 $(function(){
